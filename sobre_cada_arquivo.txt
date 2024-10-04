@@ -1,0 +1,78 @@
+Estrutura de Arquivos de um Projeto Django
+OBS: Se preocupar com wsgi e asgi somente na hora do deploy.
+
+1. manage.py:
+   Um utilitário que permite executar comandos administrativos. Ele facilita tarefas como rodar o servidor, aplicar migrações e criar novos aplicativos, servindo como a interface principal do projeto.
+
+2. settings.py:
+   O coração da configuração do seu projeto. Aqui você define o banco de dados, os aplicativos instalados, configurações de segurança, localização de arquivos estáticos e de templates, além de variáveis de ambiente.
+
+3. urls.py:
+   Um arquivo que mapeia URLs para views. Você define os padrões de URL que sua aplicação aceitará e as associa às funções ou classes que devem ser chamadas.
+
+4. wsgi.py:
+   Um arquivo que serve como o ponto de entrada para servidores que suportam WSGI. Ele permite que o servidor web se comunique com sua aplicação Django.
+
+5. asgi.py:
+   Similar ao wsgi.py, mas para aplicações assíncronas, suportando funcionalidades como WebSockets, crucial para aplicações em tempo real.
+
+6. __init__.py:
+   Um arquivo vazio que indica ao Python que o diretório deve ser tratado como um pacote, permitindo a importação de módulos.
+
+7. migrations/:
+   Diretório onde são armazenados arquivos de migração gerados automaticamente pelo Django. Cada arquivo contém instruções para atualizar o esquema do banco de dados.
+
+8. admin.py:
+   Aqui você registra seus modelos para que sejam acessíveis no painel de administração do Django. Permite personalizar como os dados são exibidos e manipulados.
+
+9. apps.py:
+   Define a configuração da aplicação, permitindo personalizar o nome e outras opções de configuração. Útil para integrar o aplicativo com funcionalidades específicas.
+
+10. models.py:
+    Contém a definição dos modelos, que representam as tabelas do banco de dados. Aqui, você define atributos e métodos que refletem a lógica de negócios.
+
+11. views.py:
+    Contém as funções ou classes que lidam com requisições HTTP. Aqui você processa dados, interage com modelos e retorna respostas, seja renderizando templates ou retornando dados em formato JSON.
+
+12. tests.py:
+    Utilizado para definir testes automatizados. Ajuda a garantir que as funcionalidades da aplicação funcionem corretamente e que novas alterações não quebrem o código existente.
+
+13. forms.py:
+    Define formulários baseados em modelos ou formulários personalizados. Facilita a validação e o gerenciamento de dados de entrada do usuário.
+
+14. static/:
+    Diretório para arquivos estáticos, como CSS, JavaScript e imagens. Os arquivos aqui não mudam com a lógica da aplicação e são servidos diretamente pelo servidor web.
+
+15. templates/:
+    Armazena templates HTML, Json, XmL, etc, que são renderizados pelo Django. Permite a criação de páginas dinâmicas, utilizando a linguagem de template do Django para incluir lógica nas páginas.
+
+16. signals.py:
+    Usado para definir sinais que permitem que certos eventos dentro do Django acionem funções. Por exemplo, você pode escutar eventos como salvar um modelo ou deletar um objeto.
+
+17. middleware.py:
+    Onde você pode adicionar middleware personalizado. O middleware é um componente que processa requisições e respostas, podendo modificar os dados ou a lógica antes de passar para a próxima camada.
+
+18. views/: 
+    Um diretório que pode ser criado para organizar múltiplos arquivos de views, especialmente em aplicativos grandes, separando as views por funcionalidade.
+
+19. management/:
+    Um diretório para comandos personalizados de gerenciamento. Aqui você pode definir scripts que podem ser executados a partir do manage.py.
+
+__________________________________________________________________________________________________________________________________________
+Após a criação do aplicativo, a estrutura do diretório pode parecer com isso:
+
+nome_do_app/
+    ├── __init__.py
+    ├── admin.py
+    ├── apps.py
+    ├── migrations/
+    │   └── __init__.py
+    ├── models.py
+    ├── tests.py
+    └── views.py
+
+Conclusão
+Cada arquivo e diretório criado automaticamente no Django serve a um propósito específico, ajudando a organizar e estruturar seu código de maneira eficaz. 
+Isso facilita o desenvolvimento e a manutenção do aplicativo.
+
+

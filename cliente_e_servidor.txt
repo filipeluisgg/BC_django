@@ -1,0 +1,1 @@
+O cliente(client) faz uma requisição(request) para o servidor, que pega estes dados, processa-os, e retorna uma resposta(responsa), em algum formato.

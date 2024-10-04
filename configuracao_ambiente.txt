@@ -1,0 +1,28 @@
+1- Instalar o python do site oficial(Verificar versão que a sua empresa usa).
+
+2- Criar uma pasta no caminho mais conveniente.
+
+3- Atualizar o comando pip:
+python -m pip install --upgrade pip
+
+4- Abrir o cmd no caminho da pasta e criar um ambiente virtual:
+python -m venv nome_do_ambiente
+
+5- Ativar ambiente virtual:
+nome_do_ambiente\Scripts\activate
+
+DENTRO DO AMBIENTE VIRTUAL:
+6- Instalar o framework do django:
+pip install django
+
+7- Criar um projeto django:
+django-admin startproject projeto_django
+
+8- Mude para o diretório externo:
+cd projeto_django
+
+9- Rodar o servidor:
+python manage.py runserver
+
+10- Verifique se funcionou:
+Provavelmente no terminal, apareceu uma porta web, acesse-a, e veja se ocorreu tudo bem!

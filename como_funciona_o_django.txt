@@ -1,0 +1,6 @@
+Em um navegador web, ao acessar um link/caminho(função GET/REQUEST) do projeto django que está no ar, o caminho irá 
+logo no arquivo urls.py da pasta principal, para procurar pela url, que provavelmente apontará 
+para a urls.py de um aplicativo, que incluirá mais uma parte do caminho, fornecendo assim, o 
+caminho completo, e retornando uma resposta(response) para o cliente.
+
+

@@ -1,0 +1,11 @@
+Criar novos arquivos de migração com base nas alterações que você fez nos modelos:
+python manage.py makemigrations
+
+Aplicar as migrações ao banco de dados. Ele cria,deleta ou altera tabelas conforme necessário, com base nos arquivos de migração.
+python manage.py migrate
+
+Verificar o Status das Migrações, lista todas as migrações disponíveis e indica quais foram aplicadas.
+python manage.py showmigrations
+
+Inspecionar Migrações. Este comando exibe o SQL que será executado por uma migração específica. Isso é útil para entender o que acontecerá no banco de dados.
+python manage.py sqlmigrate nome_do_app 0001
