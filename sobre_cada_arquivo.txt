@@ -59,7 +59,7 @@ OBS: Se preocupar com wsgi e asgi somente na hora do deploy.
     Um diretório para comandos personalizados de gerenciamento. Aqui você pode definir scripts que podem ser executados a partir do manage.py.
 
 __________________________________________________________________________________________________________________________________________
-Após a criação do aplicativo, a estrutura do diretório pode parecer com isso:
+Após a criação de um aplicativo, a estrutura do diretório pode parecer com isso:
 
 nome_do_app/
     ├── __init__.py
