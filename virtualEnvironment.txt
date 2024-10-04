@@ -1,0 +1,17 @@
+No Python um ambiente virtual(virtual environment ou venv) é uma ferramenta que permite criar um espaço isolado para instalar pacotes e dependências sem afetar o sistema global ou outros projetos fora dele. Isso é útil para evitar conflitos entre bibliotecas e manter a organização dos seus projetos. Ele armazena apenas isso, e não os arquivos de código. Na implementação ou modificação de algum arquivo, é de boa prática deixar o ambiente virtual do mesmo, ativado, pelo terminal que está usando para rodar o projeto, ou pelo terminal que estiver usando para rodar o projeto. Sempre ative o venv antes de rodar, caso contrário, resultará em erro de falta de dependencias ou bibliotecas(libs).
+
+
+
+
+Pelo prompt de comando:
+
+Criar o ambiente virtual:
+python -m venv nome_do_ambiente
+
+Ativar ambiente virtual:
+nome_do_ambiente\Scripts\activate
+
+Desativar ambiente virtual:
+deactivate
+ou
+Fechar o terminal
