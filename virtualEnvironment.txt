@@ -15,3 +15,4 @@ Desativar ambiente virtual:
 deactivate
 ou
 Fechar o terminal
+
